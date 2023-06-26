@@ -1,0 +1,892 @@
+@charset "UTF-8";
+.bodyindex, .bodyhyper, .bodyhistoria, .bodydealer, .bodycontacto {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; }
+
+.bodyindex {
+  background-image: url(../img/paganii_utopia_2023_4k_8k_4-3840x2160.jpg);
+  animation-name: body;
+  animation-duration: 1s; }
+
+@keyframes body {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
+header .menu-hamburguesa-index {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  animation-name: hambuerguesa;
+  animation-duration: 1s; }
+
+@keyframes hambuerguesa {
+  0% {
+    transform: translate(50px, 0px); }
+  50% {
+    transform: translate(50px, 0px); }
+  100% {
+    transform: translate(0px, 0px); } }
+  header .menu-hamburguesa-index .checkbox-toggle {
+    display: none; }
+  header .menu-hamburguesa-index .checkbox-toggle:checked ~ .opciones-menu {
+    transform: translateX(0); }
+  header .menu-hamburguesa-index .icono-hamburguesa {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1;
+    color: #b3a898; }
+  header .menu-hamburguesa-index .opciones-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #181818;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    header .menu-hamburguesa-index .opciones-menu .checkbox-toggle {
+      display: none; }
+    header .menu-hamburguesa-index .opciones-menu .checkbox-toggle:checked ~ .opciones-menu {
+      transform: translateX(0); }
+    header .menu-hamburguesa-index .opciones-menu .icono-hamburguesa {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 1;
+      color: black; }
+    header .menu-hamburguesa-index .opciones-menu .opciones-lista {
+      font-size: 30px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      font-family: 'Goldman', cursive;
+      font-family: 'Gruppo', cursive; }
+      header .menu-hamburguesa-index .opciones-menu .opciones-lista li {
+        margin-bottom: 10px; }
+        header .menu-hamburguesa-index .opciones-menu .opciones-lista li a {
+          color: #fff;
+          text-decoration: none; }
+        header .menu-hamburguesa-index .opciones-menu .opciones-lista li a:hover {
+          font-size: 2rem;
+          transition: font-size 0.5s ease;
+          /* Transición de medio segundo */ }
+        header .menu-hamburguesa-index .opciones-menu .opciones-lista li a:not(:hover) {
+          font-size: 30px;
+          transition: font-size 0.5s ease; }
+    header .menu-hamburguesa-index .opciones-menu .redes-sociales {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 45%;
+      width: 100%;
+      padding-bottom: 20px; }
+      header .menu-hamburguesa-index .opciones-menu .redes-sociales a {
+        margin: 10px; }
+      header .menu-hamburguesa-index .opciones-menu .redes-sociales img {
+        width: 50px;
+        height: 50px; }
+
+header div nav .banner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: rgba(205, 154, 154, 0);
+  background: linear-gradient(90deg, rgba(205, 154, 154, 0) 0%, #2c2c2c 80%);
+  background: -webkit-linear-gradient(90deg, rgba(205, 154, 154, 0) 0%, #2c2c2c 80%);
+  background: -moz-linear-gradient(90deg, rgba(205, 154, 154, 0) 0%, #2c2c2c 80%); }
+  header div nav .banner .link {
+    list-style: none;
+    animation-name: links-index;
+    animation-duration: 1s; }
+
+@keyframes links-index {
+  0% {
+    transform: translate(0px, -50px); }
+  50% {
+    transform: translate(0px, -50px); }
+  100% {
+    transform: translate(0px, 0px); } }
+    header div nav .banner .link a {
+      font-size: 1.5rem;
+      color: #b3a898;
+      text-decoration: none;
+      font-family: 'Goldman', cursive;
+      font-family: 'Gruppo', cursive;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px #000000; }
+    header div nav .banner .link a:hover {
+      font-size: 1.75rem;
+      transition: font-size 0.5s ease;
+      /* Transición de medio segundo */ }
+    header div nav .banner .link a:not(:hover) {
+      font-size: 1.5rem;
+      transition: font-size 0.5s ease; }
+  header div nav .banner .paganilogo {
+    list-style: none;
+    animation-name: links-index;
+    animation-duration: 1s; }
+
+@keyframes links-index {
+  0% {
+    transform: translate(0px, -50px); }
+  50% {
+    transform: translate(0px, -50px); }
+  100% {
+    transform: translate(0px, 0px); } }
+    header div nav .banner .paganilogo img {
+      height: 25px; }
+
+.main-index .h1-index {
+  text-align: center;
+  font-size: 2.5rem;
+  color: antiquewhite;
+  margin-top: 3rem;
+  text-shadow: 2px 2px 4px #000000;
+  animation-name: home;
+  animation-duration: 5s; }
+
+@keyframes home {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 0%;
+    font-size: 3rem; }
+  100% {
+    opacity: 100%; } }
+
+.main-index .contenedor-index {
+  font-size: 6rem;
+  font-family: 'Great Vibes', cursive;
+  color: antiquewhite;
+  /* dipley flex */
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8.5rem;
+  text-shadow: 2px 2px 4px #000000; }
+  .main-index .contenedor-index .h2-index {
+    animation-name: utopia;
+    animation-duration: 3s; }
+
+@keyframes utopia {
+  0% {
+    opacity: 0%;
+    font-size: 10rem; }
+  100% {
+    opacity: 100%; } }
+  .main-index .contenedor-index .h3-index {
+    animation-name: enciende;
+    animation-duration: 3s; }
+
+@keyframes enciende {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 0%;
+    font-size: 8rem; }
+  100% {
+    opacity: 100%; } }
+
+.contenedor-footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  .contenedor-footer .h4-index {
+    color: rgba(240, 248, 255, 0.281);
+    position: fixed;
+    bottom: 2px;
+    left: 8px;
+    animation-name: h4index;
+    animation-duration: 1s; }
+
+@keyframes h4index {
+  0% {
+    transform: translate(0px, 50px); }
+  50% {
+    transform: translate(0px, 50px); }
+  100% {
+    transform: translate(0px, 0px); } }
+  .contenedor-footer .contenedor-redes {
+    position: fixed;
+    bottom: 2px;
+    right: 8px;
+    animation-name: redes;
+    animation-duration: 1s; }
+
+@keyframes redes {
+  0% {
+    transform: translate(0px, 50px); }
+  50% {
+    transform: translate(0px, 50px); }
+  100% {
+    transform: translate(0px, 0px); } }
+    .contenedor-footer .contenedor-redes a {
+      text-decoration: none;
+      margin: 2px; }
+      .contenedor-footer .contenedor-redes a img {
+        width: 40px;
+        height: 40px; }
+    .contenedor-footer .contenedor-redes div .item-fixed1, .contenedor-footer .contenedor-redes div .item-fixed2, .contenedor-footer .contenedor-redes div .item-fixed3, .contenedor-footer .contenedor-redes div .item-fixed4 {
+      height: 2rem; }
+
+/* PC */
+@media screen and (min-width: 851px) {
+  header .menu-hamburguesa {
+    display: none; }
+  header .menu-hamburguesa-index {
+    display: none; } }
+
+/* tablets */
+@media screen and (max-width: 850px) {
+  .contenedor-footer .contenedor-redes {
+    display: none; }
+  header div nav .banner .link {
+    display: none; }
+  .main-index .contenedor-index {
+    margin-top: 11rem;
+    font-size: 5rem; }
+    .main-index .contenedor-index .h3-index {
+      animation-name: enciende;
+      animation-duration: 3s; }
+  @keyframes enciende {
+    0% {
+      opacity: 0%; }
+    50% {
+      opacity: 0%;
+      font-size: 6.7rem; }
+    100% {
+      opacity: 100%; } } }
+
+/* celulares */
+@media screen and (max-width: 500px) {
+  .main-index .h1-index {
+    font-size: 2rem; }
+  .main-index .contenedor-index {
+    font-size: 3.5rem;
+    margin-top: 13rem; }
+    .main-index .contenedor-index .h3-index {
+      animation-name: enciende;
+      animation-duration: 3s; }
+  @keyframes enciende {
+    0% {
+      opacity: 0%; }
+    50% {
+      opacity: 0%;
+      font-size: 5rem; }
+    100% {
+      opacity: 100%; } }
+  .contenedor-footer .h4-index {
+    font-size: 10px; } }
+
+.bodyindex, .bodyhyper, .bodyhistoria, .bodydealer, .bodycontacto {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; }
+
+.bodyhyper {
+  background-image: url(../img/5594016.jpg); }
+
+header .menu-hamburguesa-hyper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  header .menu-hamburguesa-hyper .checkbox-toggle {
+    display: none; }
+  header .menu-hamburguesa-hyper .checkbox-toggle:checked ~ .opciones-menu {
+    transform: translateX(0); }
+  header .menu-hamburguesa-hyper .icono-hamburguesa {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1;
+    color: black; }
+  header .menu-hamburguesa-hyper .opciones-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #181818;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    header .menu-hamburguesa-hyper .opciones-menu .checkbox-toggle {
+      display: none; }
+    header .menu-hamburguesa-hyper .opciones-menu .checkbox-toggle:checked ~ .opciones-menu {
+      transform: translateX(0); }
+    header .menu-hamburguesa-hyper .opciones-menu .icono-hamburguesa {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 1; }
+    header .menu-hamburguesa-hyper .opciones-menu .opciones-lista {
+      font-size: 30px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      font-family: 'Goldman', cursive;
+      font-family: 'Gruppo', cursive; }
+      header .menu-hamburguesa-hyper .opciones-menu .opciones-lista li {
+        margin-bottom: 10px; }
+        header .menu-hamburguesa-hyper .opciones-menu .opciones-lista li a {
+          color: #fff;
+          text-decoration: none; }
+        header .menu-hamburguesa-hyper .opciones-menu .opciones-lista li a:hover {
+          font-size: 2rem;
+          transition: font-size 0.5s ease;
+          /* Transición de medio segundo */ }
+        header .menu-hamburguesa-hyper .opciones-menu .opciones-lista li a:not(:hover) {
+          font-size: 30px;
+          transition: font-size 0.5s ease; }
+    header .menu-hamburguesa-hyper .opciones-menu .redes-sociales {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 45%;
+      width: 100%;
+      padding-bottom: 20px; }
+      header .menu-hamburguesa-hyper .opciones-menu .redes-sociales a {
+        margin: 10px; }
+      header .menu-hamburguesa-hyper .opciones-menu .redes-sociales img {
+        width: 50px;
+        height: 50px; }
+
+header div nav .bannerhyper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background: #242323; }
+  header div nav .bannerhyper .linkhyper {
+    list-style: none; }
+    header div nav .bannerhyper .linkhyper a {
+      font-size: 1.5rem;
+      color: #fdf9f9;
+      text-decoration: none;
+      font-family: 'Goldman', cursive;
+      font-family: 'Gruppo', cursive;
+      font-weight: bold; }
+    header div nav .bannerhyper .linkhyper a:hover {
+      font-size: 1.75rem;
+      transition: font-size 0.5s ease;
+      /* Transición de medio segundo */ }
+    header div nav .bannerhyper .linkhyper a:not(:hover) {
+      font-size: 1.5rem;
+      transition: font-size 0.5s ease; }
+  header div nav .bannerhyper .paganilogo {
+    list-style: none; }
+    header div nav .bannerhyper .paganilogo img {
+      height: 25px; }
+
+.mainhyper .h1-hyper {
+  font-family: 'Goldman', cursive;
+  font-family: 'Gruppo', cursive;
+  font-weight: bold; }
+
+.mainhyper .contenedor-hyper {
+  margin-top: 5rem; }
+  .mainhyper .contenedor-hyper .huayra {
+    display: flex;
+    justify-content: center;
+    gap: 3rem; }
+  .mainhyper .contenedor-hyper .imola {
+    display: flex;
+    margin-top: 10rem;
+    justify-content: center;
+    gap: 3rem; }
+    .mainhyper .contenedor-hyper .imola .texto-imola {
+      display: flex;
+      flex-flow: column;
+      align-items: flex-end; }
+  .mainhyper .contenedor-hyper .zonda {
+    display: flex;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    justify-content: center;
+    gap: 3rem; }
+  .mainhyper .contenedor-hyper div div img {
+    height: 550px;
+    box-shadow: 5px 5px 5px black; }
+
+.contenedor-footer .h3-hyper {
+  color: rgba(0, 0, 0, 0.185);
+  position: fixed;
+  bottom: 2px;
+  left: 8px; }
+
+/* PC */
+@media screen and (min-width: 851px) {
+  header .menu-hamburguesa-hyper {
+    display: none; } }
+
+/* tablets */
+@media screen and (max-width: 850px) {
+  .contenedor-footer .contenedor-redes {
+    display: none; }
+  .header-hyper div nav .bannerhyper .linkhyper {
+    display: none; }
+  .mainhyper .contenedor-hyper .huayra {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 3rem; }
+  .mainhyper .contenedor-hyper .imola {
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+    margin-top: 10rem;
+    gap: 3rem; }
+    .mainhyper .contenedor-hyper .imola .texto-imola {
+      display: flex;
+      flex-flow: column;
+      align-items: start; }
+  .mainhyper .contenedor-hyper .zonda {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    gap: 3rem; }
+  .mainhyper .contenedor-hyper div div img {
+    height: 450px; } }
+
+/* celulares */
+@media screen and (max-width: 500px) {
+  .contenedor-footer .h3-hyper {
+    font-size: 10px; }
+  .mainhyper .contenedor-hyper div div img {
+    height: 350px; } }
+
+.bodyindex, .bodyhyper, .bodyhistoria, .bodydealer, .bodycontacto {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; }
+
+.bodyhistoria {
+  background-image: url(../img/patron-de-lineas-negro_7680x4320_xtrafondos.com.jpg); }
+
+header .menu-hamburguesa-historia {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  header .menu-hamburguesa-historia .checkbox-toggle {
+    display: none; }
+  header .menu-hamburguesa-historia .checkbox-toggle:checked ~ .opciones-menu {
+    transform: translateX(0); }
+  header .menu-hamburguesa-historia .icono-hamburguesa {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1;
+    color: black; }
+  header .menu-hamburguesa-historia .opciones-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #181818;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    header .menu-hamburguesa-historia .opciones-menu .checkbox-toggle {
+      display: none; }
+    header .menu-hamburguesa-historia .opciones-menu .checkbox-toggle:checked ~ .opciones-menu {
+      transform: translateX(0); }
+    header .menu-hamburguesa-historia .opciones-menu .icono-hamburguesa {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 1; }
+    header .menu-hamburguesa-historia .opciones-menu .opciones-lista {
+      font-size: 30px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      font-family: 'Goldman', cursive;
+      font-family: 'Gruppo', cursive; }
+      header .menu-hamburguesa-historia .opciones-menu .opciones-lista li {
+        margin-bottom: 10px; }
+        header .menu-hamburguesa-historia .opciones-menu .opciones-lista li a {
+          color: #fff;
+          text-decoration: none; }
+        header .menu-hamburguesa-historia .opciones-menu .opciones-lista li a:hover {
+          font-size: 2rem;
+          transition: font-size 0.5s ease;
+          /* Transición de medio segundo */ }
+        header .menu-hamburguesa-historia .opciones-menu .opciones-lista li a:not(:hover) {
+          font-size: 30px;
+          transition: font-size 0.5s ease; }
+    header .menu-hamburguesa-historia .opciones-menu .redes-sociales {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 45%;
+      width: 100%;
+      padding-bottom: 20px; }
+      header .menu-hamburguesa-historia .opciones-menu .redes-sociales a {
+        margin: 10px; }
+      header .menu-hamburguesa-historia .opciones-menu .redes-sociales img {
+        width: 50px;
+        height: 50px; }
+
+header div nav .bannerhistoria {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  background: #fff8ee; }
+  header div nav .bannerhistoria .link-historia {
+    list-style: none; }
+    header div nav .bannerhistoria .link-historia a {
+      font-size: 1.5rem;
+      color: #161616;
+      text-decoration: none;
+      font-family: 'Goldman', cursive;
+      font-family: 'Gruppo', cursive;
+      font-weight: bold; }
+    header div nav .bannerhistoria .link-historia a:hover {
+      font-size: 1.75rem;
+      transition: font-size 0.5s ease;
+      /* Transición de medio segundo */ }
+    header div nav .bannerhistoria .link-historia a:not(:hover) {
+      font-size: 1.5rem;
+      transition: font-size 0.5s ease; }
+  header div nav .bannerhistoria .paganilogo {
+    list-style: none; }
+    header div nav .bannerhistoria .paganilogo img {
+      height: 27px; }
+
+main .h1-historia {
+  font-family: 'Goldman', cursive;
+  font-family: 'Gruppo', cursive;
+  font-weight: bold;
+  color: #f0ffff; }
+
+main .contenedor-historia {
+  margin-left: 25%;
+  margin-right: 25%; }
+  main .contenedor-historia .carousel .carousel-inner .carousel-item .carousel-caption h2 {
+    background-color: #1b1b1b28; }
+  main .contenedor-historia .carousel .carousel-inner .carousel-item .carousel-caption p {
+    background-color: #1b1b1b28; }
+
+.contenedor-footer .h3-historia {
+  color: rgba(255, 255, 255, 0.185);
+  position: fixed;
+  bottom: 2px;
+  left: 8px; }
+
+/* PC */
+@media screen and (min-width: 851px) {
+  header .menu-hamburguesa-historia {
+    display: none; } }
+
+/* tablets */
+@media screen and (max-width: 850px) {
+  header .menu-hamburguesa-historia {
+    z-index: 3; }
+  header div nav .bannerhistoria .link-historia {
+    display: none; }
+  main .contenedor-historia {
+    margin-left: 5%;
+    margin-right: 5%; }
+  .contenedor-footer .contenedor-redes {
+    display: none; } }
+
+/* celulares */
+@media screen and (max-width: 500px) {
+  main .contenedor-historia .h2-historia {
+    font-size: 12px; }
+  main .contenedor-historia .imagen-nene img {
+    height: 200px; }
+  main .contenedor-historia .p-historia {
+    font-size: 10px; }
+  .contenedor-footer .h3-historia {
+    font-size: 10px; } }
+
+.bodyindex, .bodyhyper, .bodyhistoria, .bodydealer, .bodycontacto {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; }
+
+.bodydealer {
+  background-image: url(../img/1121181.jpg); }
+
+header .menu-hamburguesa-dealer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  header .menu-hamburguesa-dealer .checkbox-toggle {
+    display: none; }
+  header .menu-hamburguesa-dealer .checkbox-toggle:checked ~ .opciones-menu {
+    transform: translateX(0); }
+  header .menu-hamburguesa-dealer .icono-hamburguesa {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1;
+    color: black; }
+  header .menu-hamburguesa-dealer .opciones-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #181818;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    header .menu-hamburguesa-dealer .opciones-menu .checkbox-toggle {
+      display: none; }
+    header .menu-hamburguesa-dealer .opciones-menu .checkbox-toggle:checked ~ .opciones-menu {
+      transform: translateX(0); }
+    header .menu-hamburguesa-dealer .opciones-menu .icono-hamburguesa {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 1; }
+    header .menu-hamburguesa-dealer .opciones-menu .opciones-lista {
+      font-size: 30px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      font-family: 'Goldman', cursive;
+      font-family: 'Gruppo', cursive; }
+      header .menu-hamburguesa-dealer .opciones-menu .opciones-lista li {
+        margin-bottom: 10px; }
+        header .menu-hamburguesa-dealer .opciones-menu .opciones-lista li a {
+          color: #fff;
+          text-decoration: none; }
+        header .menu-hamburguesa-dealer .opciones-menu .opciones-lista li a:hover {
+          font-size: 2rem;
+          transition: font-size 0.5s ease;
+          /* Transición de medio segundo */ }
+        header .menu-hamburguesa-dealer .opciones-menu .opciones-lista li a:not(:hover) {
+          font-size: 30px;
+          transition: font-size 0.5s ease; }
+    header .menu-hamburguesa-dealer .opciones-menu .redes-sociales {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 45%;
+      width: 100%;
+      padding-bottom: 20px; }
+      header .menu-hamburguesa-dealer .opciones-menu .redes-sociales a {
+        margin: 10px; }
+      header .menu-hamburguesa-dealer .opciones-menu .redes-sociales img {
+        width: 50px;
+        height: 50px; }
+
+header div nav .banner-dealer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: rgba(205, 154, 154, 0);
+  background: linear-gradient(90deg, rgba(205, 154, 154, 0) 0%, #2c2c2c 80%);
+  background: -webkit-linear-gradient(90deg, rgba(205, 154, 154, 0) 0%, #2c2c2c 80%);
+  background: -moz-linear-gradient(90deg, rgba(205, 154, 154, 0) 0%, #2c2c2c 80%); }
+  header div nav .banner-dealer .link {
+    list-style: none; }
+    header div nav .banner-dealer .link a {
+      font-size: 1.5rem;
+      color: black;
+      text-decoration: none;
+      font-family: 'Goldman', cursive;
+      font-family: 'Gruppo', cursive;
+      font-weight: bold; }
+    header div nav .banner-dealer .link a:hover {
+      font-size: 1.75rem;
+      transition: font-size 0.5s ease;
+      /* Transición de medio segundo */ }
+    header div nav .banner-dealer .link a:not(:hover) {
+      font-size: 1.5rem;
+      transition: font-size 0.5s ease; }
+  header div nav .banner-dealer .paganilogo {
+    list-style: none; }
+    header div nav .banner-dealer .paganilogo img {
+      height: 25px; }
+
+main .h1-dealers {
+  margin-top: 5rem;
+  text-align: center;
+  font-family: 'Goldman', cursive;
+  font-family: 'Gruppo', cursive;
+  font-weight: bold;
+  font-style: italic; }
+
+main .h2-dealers {
+  font-family: 'Goldman', cursive;
+  font-family: 'Gruppo', cursive;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 1rem; }
+
+main .maps {
+  text-align: center; }
+
+/* PC */
+@media screen and (min-width: 851px) {
+  header .menu-hamburguesa-dealer {
+    display: none; }
+  main .maps .maps-tablet {
+    display: none; }
+  main .maps .maps-cel {
+    display: none; } }
+
+/* tablets */
+@media screen and (max-width: 850px) {
+  header div nav .banner-dealer .link {
+    display: none; }
+  main .maps .maps-pc {
+    display: none; }
+  main .maps .maps-cel {
+    display: none; }
+  .contenedor-footer .contenedor-redes {
+    display: none; } }
+
+/* celulares */
+@media screen and (max-width: 500px) {
+  main .maps .maps-pc {
+    display: none; }
+  main .maps .maps-tablet {
+    display: none; }
+  main .maps .maps-cel {
+    display: block; } }
+
+.bodyindex, .bodyhyper, .bodyhistoria, .bodydealer, .bodycontacto {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; }
+
+.bodycontacto {
+  background-image: url(../img/9dbfe5d9f34ffafd2c5ba2a2d0867be0.jpg); }
+
+main .h1-contacto {
+  margin: 4rem;
+  font-family: 'Goldman', cursive;
+  font-family: 'Gruppo', cursive;
+  font-weight: bold;
+  font-style: italic; }
+
+main .formulario {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Goldman', cursive;
+  font-family: 'Gruppo', cursive;
+  font-weight: bold; }
+  main .formulario .contenedor-dentro-formulario {
+    font-size: 30px;
+    background-color: #e2e2e257;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px; }
+    main .formulario .contenedor-dentro-formulario .form {
+      font-size: 20px;
+      display: flex;
+      justify-content: flex-end;
+      margin: 5px; }
+      main .formulario .contenedor-dentro-formulario .form input {
+        border: 0.5px solid black;
+        border-radius: 3px; }
+
+main .h2-contacto {
+  color: antiquewhite;
+  font-size: 40px;
+  margin-top: 30px;
+  text-align: center; }
+
+main .p-contacto {
+  margin-top: 30px;
+  color: antiquewhite;
+  text-align: center; }
+
+.contenedor-footer .h3-contacto {
+  color: rgba(0, 0, 0, 0.678);
+  position: fixed;
+  bottom: 2px;
+  left: 8px; }
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }

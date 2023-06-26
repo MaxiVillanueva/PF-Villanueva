@@ -1,0 +1,278 @@
+@import "../utilidades/variables.scss";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+.bodyhistoria{
+    background-image: url(../img/patron-de-lineas-negro_7680x4320_xtrafondos.com.jpg);
+    @extend %fondo;
+}
+
+header{
+    
+    // menu hamburguesa 
+    .menu-hamburguesa-historia{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .checkbox-toggle{
+            display: none;
+        }
+
+        .checkbox-toggle:checked ~ .opciones-menu{
+            transform: translateX(0);
+        }
+
+        .icono-hamburguesa{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            cursor: pointer;
+            z-index: 1;
+            color: rgb(0, 0, 0);
+        }
+
+        .opciones-menu{
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 80%;
+            height: 100%;
+            background-color: #181818;
+            padding: 20px;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .checkbox-toggle{
+                display: none;
+            }
+    
+            .checkbox-toggle:checked ~ .opciones-menu{
+                transform: translateX(0);
+            }
+    
+            .icono-hamburguesa{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: 30px;
+                cursor: pointer;
+                z-index: 1;
+            }
+
+            .opciones-lista{
+                font-size: 30px;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                font-family: 'Goldman', cursive;
+                font-family: 'Gruppo', cursive;
+
+                li{
+                    margin-bottom: 10px;
+
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                    }     
+                                        
+                    a:hover{
+                        font-size: 2rem;
+                        transition: font-size 0.5s ease; /* Transición de medio segundo */
+                    }
+
+                    a:not(:hover){
+                        font-size: 30px;
+                        transition: font-size 0.5s ease;
+                    }               
+                }
+            }
+
+            .redes-sociales{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 45%;
+                width: 100%;
+                padding-bottom: 20px;
+
+                a{
+                    margin: 10px;
+                }    
+
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+    
+    // fin de menu hamburguesa
+
+    div{
+        nav{
+            .bannerhistoria{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                padding-top: 1.2rem;
+                padding-bottom: 1.2rem;
+                background: rgb(255, 248, 238);
+
+                .link-historia{
+                    list-style: none;
+
+                    a{
+                        font-size: 1.5rem;
+                        color: rgb(22, 22, 22);
+                        text-decoration: none;
+                        font-family: 'Goldman', cursive;
+                        font-family: 'Gruppo', cursive;
+                        font-weight: bold;
+                    }
+
+                    a:hover{
+                        font-size: 1.75rem;
+                        transition: font-size 0.5s ease; /* Transición de medio segundo */
+                    }
+
+                    a:not(:hover){
+                        font-size: 1.5rem;
+                        transition: font-size 0.5s ease;
+                    }
+                }
+
+                .paganilogo{
+                    list-style: none;
+
+                    img{
+                        height: 27px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main{
+    .h1-historia{
+        font-family: 'Goldman', cursive;
+        font-family: 'Gruppo', cursive;
+        font-weight: bold;
+        color: $color-historia; 
+    }
+
+    .contenedor-historia{
+        margin-left: 25%;
+        margin-right: 25%;
+
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    .carousel-caption{
+                        h2{
+                            background-color: #1b1b1b28
+                        }
+
+                        p{
+                            background-color: #1b1b1b28
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contenedor-footer{
+
+    .h3-historia{
+        color: rgba(255, 255, 255, 0.185);
+        position: fixed;
+        bottom: 2px;
+        left: 8px;
+    }
+}
+
+/* PC */
+@media screen and (min-width:851px){
+    header{
+        .menu-hamburguesa-historia{
+            display: none;
+        }        
+    }
+}
+
+/* tablets */
+@media screen and (max-width:850px){
+    
+    header{
+        .menu-hamburguesa-historia{
+            z-index: 3;
+        }
+
+        div{
+            nav{
+                .bannerhistoria{
+                    .link-historia{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    
+    main{
+        .contenedor-historia{
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+
+    .contenedor-footer{
+        .contenedor-redes{
+            display: none;
+        }
+    }
+}
+
+/* celulares */
+@media screen and (max-width:500px){
+
+    main{
+        .contenedor-historia{
+            
+            .h2-historia{
+                font-size: 12px;
+            }
+
+            .imagen-nene{
+                img{
+                    height: 200px;
+                }
+            }
+
+            .p-historia{
+                font-size: 10px;
+            }
+        }
+    }
+
+    .contenedor-footer{
+        .h3-historia{
+            font-size: 10px;
+        }        
+    }
+}
